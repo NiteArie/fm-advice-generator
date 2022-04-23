@@ -10,20 +10,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <link href="styles/reset.css" rel="stylesheet">
   <link href="styles/index.css" rel="stylesheet">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <div class="card">
+    <p class="card__header">
+      <span class="card__header-prefix">Advice</span>
+      <span class="card__header-suffix js-advice-id"></span>
+    </p>
+    <p class="card__content js-advice">
+      
+    </p>
+    <img class="card__divider" src="images/pattern-divider-desktop.svg" alt="">
+    <button class="card__roll js-random-advice-button">
+      <img class="card__roll-icon" src="images/icon-dice.svg" alt="">
+    </button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/nitearie">tien.nguyen</a>.
   </div>
   <script src="scripts/index.js"></script>
 </body>

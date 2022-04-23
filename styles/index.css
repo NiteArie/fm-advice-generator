@@ -6,4 +6,92 @@
 
 body {
     font-family: "Manrope", sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 500px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 12px;
+}
+
+.card__header {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(150, 100%, 66%);
+}
+
+.card__content {
+    margin-top: 24px;
+    margin-bottom: 28px;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    line-height: 1.5;
+}
+
+.card__divider {
+    display: block;
+    margin: auto;
+    width: 380px;
+    margin-bottom: 12px;
+}
+
+.card__roll {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color:hsl(150, 100%, 66%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__roll:hover {
+    filter: brightness(1);
+    box-shadow: 0px 0px 24px 20px hsla(150, 100%, 66%, 0.3);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color:hsl(193, 38%, 86%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width: 500px) {
+    .card {
+        max-width: 350px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .card__divider {
+        width: 300px;
+    }
+
+    .card__content {
+        font-size: 24px;
+    }
 }

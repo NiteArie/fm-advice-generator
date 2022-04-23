@@ -1,5 +1,9 @@
 # fm-advice-generator (Advice Generator)
 
+## Live View
+
+URL: [https://nitearie.github.io/fm-advice-generator/](https://nitearie.github.io/fm-advice-generator/)
+
 ## Design
 
 ![Design Preview](./design/desktop-preview.jpg)
